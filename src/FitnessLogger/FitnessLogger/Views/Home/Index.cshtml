@@ -12,7 +12,11 @@
         <thead>
             <tr>
                 <th><h2>Date</h2></th>
-                <th class="hidden-xs"><h2>Exercise</h2></th>
+                <th><h2>Exercise</h2></th>
+                <th class="hidden-xs"><h2>Weight</h2></th>
+                <th class="hidden-xs"><h2>Reps</h2></th>
+                <th class="hidden-xs"><h2>Sets</h2></th>
+                <th class="hidden-xs"><h2>Rest time</h2></th>
                 <th class="hidden-xs"><h2>Notes</h2></th>
             </tr>
         </thead>
@@ -27,7 +31,24 @@
                         <h6>@logrow.Exercise</h6>
                     </td>
                     <td>
+                        <h6>@logrow.Weight</h6>
+                    </td>
+                    <td>
+                        <h6>@logrow.Repetitions</h6>
+                    </td>
+                    <td>
+                        <h6>@logrow.Sets</h6>
+                    </td>
+                    <td>
+                        <h6>@logrow.Rest_time</h6>
+                    </td>
+                    <td>
                         <h6>@logrow.Notes</h6>
+                    </td>
+                    <td>
+                        <a href="" class="btn btn-danger btn-sm">
+                            <span class="glyphicon glyphicon-trash"></span><span class="hidden-xs"> Delete</span>
+                        </a>
                     </td>
                 </tr>
             }

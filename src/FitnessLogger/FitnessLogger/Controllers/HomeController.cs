@@ -20,7 +20,7 @@ namespace FitnessLogger.Controllers
 
             return View(LogList);
         }
-
+       
         public ActionResult About()
         {
             ViewBag.Message = "Your application description page.";
@@ -33,6 +33,27 @@ namespace FitnessLogger.Controllers
             ViewBag.Message = "Your contact page.";
 
             return View();
+        }
+
+        public ActionResult Create()
+        {
+            return View();
+        }
+
+        [HttpPost]
+        public ActionResult Create(LogRow LogEntry)
+        {
+            LogEntry.Date = DateTime.Now;
+
+            if(ModelState.IsValid)
+            {
+                db.AddExercise(LogEntry);
+
+                return RedirectToAction("Index");
+            }
+            
+
+            return View(LogEntry);
         }
     }
 }
