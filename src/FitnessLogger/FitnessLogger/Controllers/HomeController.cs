@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
-using FitnessLogger.obj;
+using FitnessLogger.Classes;
 using FitnessLogger.Models;
 
 namespace FitnessLogger.Controllers
